@@ -1,0 +1,57 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: inherit;
+	font-size: 30px;
+}
+
+:root {
+	--floral-white: #fdfaf4;
+	--fandango-pink: #e45788;
+	--azure: #007fff;
+	--beige: #f5f5dc;
+	--banana-yellow: #ffe135;
+}
+
+section {
+	height: 100vh;
+	padding: 1em;
+}
+
+.bg-floralwhite {
+	background-color: var(--floral-white);
+}
+
+.bg-fandangopink {
+	background-color: var(--fandango-pink);
+}
+
+.bg-beige {
+	background-color: var(--beige);
+}
+
+.border-azure {
+	border-bottom: 3em solid var(--azure);
+}
+
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+}
+
+
+.text-shadow {
+	font-size: 5em;
+	font-weight: bolder;
+	text-shadow: 0.1em 0.1em 0.1em var(--banana-yellow);
+}
+
