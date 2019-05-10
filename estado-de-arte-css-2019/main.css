@@ -8,7 +8,8 @@
 
 html {
 	box-sizing: inherit;
-	font-size: 30px;
+	font-size: 36px;
+	line-height: 1.5;
 }
 
 :root {
@@ -17,6 +18,10 @@ html {
 	--azure: #007fff;
 	--beige: #f5f5dc;
 	--banana-yellow: #ffe135;
+}
+
+h1, h2, h3, h4 {
+	line-height: 1;
 }
 
 section {
@@ -40,7 +45,6 @@ section {
 	border-bottom: 3em solid var(--azure);
 }
 
-
 .flex-center {
 	display: flex;
 	align-items: center;
@@ -48,10 +52,32 @@ section {
 	flex-flow: column;
 }
 
-
 .text-shadow {
 	font-size: 5em;
 	font-weight: bolder;
 	text-shadow: 0.1em 0.1em 0.1em var(--banana-yellow);
 }
 
+.multiple-background {
+	background: url('img/');
+	background: url('img/');
+
+	background-position: bottom;
+	background-position: top;
+}
+
+.colors-hsl {
+
+}
+
+.colors-hsla {
+
+}
+
+.colors-rgba {
+
+}
+
+.box-sizing {}
+
+.box-shadow {}
