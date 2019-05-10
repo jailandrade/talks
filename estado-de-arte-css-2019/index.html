@@ -16,11 +16,12 @@
 			<h1>En esta platica hablaremos de:</h1>
 			<ul>
 				<li>CSS</li>
-				<li>CSS y la W3C</li>
-				<li>CSS y los navegadores</li>
-				<li>CSS y los programadores</li>
-				<li>CSS y el futuro que nos espera</li>
 			</ul>
+		</section>
+		<section>
+			<h2>Curiosidad #1</h2>
+			<p>Los pseudoelementos llevan <code>::</code> y nos permite crear elementos que no existe en el DOM</p>
+			<p>Las pseudoclases llevan <code>:</code> y nos permite seleccionar elementos de una manera excepcional</p>
 		</section>
 		<section class="bg-fandangopink flex-center">
 			<h1>¿Que hay de nuevo en CSS?</h1>
@@ -28,286 +29,391 @@
 		<section class="border-azure flex-center">
 			<h1>Desde CSS3 (2011) tenemos...</h1>
 		</section>
-		<section class="bg-beige">
-			<h1>SVG en CSS backgrounds</h1>
+		<section>
+			<h1 class="cr">SVG en CSS backgrounds</h1>
+			<div class="cat-background">
+				<p>El gatito esta de fondo</p>
+			</div>
 		</section>
-		<section class="text-shadow">
-			<h1>Text shadow</h1>
+		<section>
+			<h1 class="cr">Text shadow</h1>
+			<p class="text-shadow">Sombras</p>
 		</section>
 		<section class="">
-			<h1>Nuevos selectores</h1>
-			<code>
-				[foo^="bar"]
-				[foo$="bar"]
-				[foo*="bar"]
-				:root
-				:nth-child()
-				:nth-last-child()
-				:nth-of-type()
-				:nth-last-of-type()
-				:last-child
-				:first-of-type 
-				:last-of-type
-				:only-child
-				:only-of-type
-				:empty
-				:target
-				:enabled
-				:disabled
-				:checked
-				:not()
-			</code>
+			<h1 class="rec">Nuevos selectores</h1>
+			<div class="grid half">
+				<div class="column">
+					<p><code>:root</code></p>
+					<p><code>:nth-child()</code></p>
+					<p><code>:nth-last-child()</code></p>
+					<p><code>:nth-of-type()</code></p>
+					<p><code>:nth-last-of-type()</code></p>
+					<p><code>:last-child</code></p>
+					<p><code>:first-of-type </code></p>
+				</div>
+				<div class="column">
+					<p><code>:last-of-type</code></p>
+					<p><code>:only-child</code></p>
+					<p><code>:only-of-type</code></p>
+					<p><code>:empty</code></p>
+					<p><code>:target</code></p>
+					<p><code>:enabled</code></p>
+					<p><code>:disabled</code></p>
+					<p><code>:checked</code></p>
+					<p><code>:not()</code></p>
+				</div>
+			</div>
+			
 			
 		</section>
-		<section class="">
-			<h1>Multiples fondos</h1>
+		<section class="multiple-background">
+			<h1 class="cr">Multiples fondos</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Nuevas formas de manipular colores</h1>
 		</section>
 		<section class="">
-			<h1>Box sizing</h1>
+			<h1 class="cr">Box shadow</h1>
+			<div class="box-shadow">
+				<span>Esta caja tiene box-shadow</span>
+			</div>
 		</section>
 		<section class="">
-			<h1>Box shadow</h1>
+			<h1 class="cr">Border images</h1>
+			<div class="border-images">
+				<p>Este es una caja cuyo borde es una imagen</p>
+			</div>
 		</section>
 		<section class="">
-			<h1>Border images</h1>
+			<h1 class="cr">Border radius</h1>
+			<div class="border-radius">
+				<span>Esta caja tiene border radius</span>
+			</div>
 		</section>
 		<section class="">
-			<h1>Table display</h1>
+			<h1 class="wd">Transformaciones en 3D</h1>
+			<div class="caja">
+				<div class="transform-3d">
+					<span><code>rotateY(45deg)</code></span>
+				</div>
+			</div>
 		</section>
 		<section class="">
-			<h1>@font-face web fonts</h1>
+			<h1 class="wd">Transformaciones en 2D</h1>
+			<div class="caja">
+				<div class="transform-2d">
+					<span><code>rotateX(45deg)</code></span>
+				</div>
+			</div>
 		</section>
 		<section class="">
-			<h1>Border radius</h1>
+			<h1 class="wd">Transiciones</h1>
+			<div class="transition">
+				<p>Flash murio, ahora tenemos CSS</p>
+			</div>
 		</section>
 		<section class="">
-			<h1>Transformaciones en 3D</h1>
+			<h1 class="rec">Media queries</h1>
+			<p><code>@media (property: value) {}</code></p>
 		</section>
 		<section class="">
-			<h1>Transformaciones en 2D</h1>
+			<h1 class="wd">Animaciones</h1>
+			<div class="animation">
+				<span>Caja con animacion</span>
+			</div>
 		</section>
 		<section class="">
-			<h1>Transiciones</h1>
+			<h1 class="cr">Cajas flexibles o Flexbox</h1>
+			<div class="menu flex">
+				<a href="#">A</a>
+				<a href="#">B</a>
+				<a href="#">C</a>
+				<a href="#">D</a>
+				<a href="#">E</a>
+			</div>
 		</section>
-		<section class="">
-			<h1>Media queries</h1>
-		</section>
-		<section class="">
-			<h1>Animaciones</h1>
-		</section>
-		<section class="">
-			<h1>Cajas flexibles o Flexbox</h1>
-		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Nuevas opciones para background-image</h1>
 		</section>
 		<section class="">
-			<h1>Opacidad</h1>
+			<h1 class="rec">Opacidad</h1>
+			<div class="opacidad">Caja opaca</div>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Posicion fixed</h1>
 		</section>
-		<section class="">
-			<h1>Gradientes</h1>
+		<section class="gradientes">
+			<h1 class="cr">Gradientes</h1>
 		</section>
 		<section class="">
-			<h1>Feature queries</h1>
+			<h1 class="cr">Feature queries</h1>
+			<p><code>@supports (display: flex) { /* hagamos magia */}</code></p>
+			<p><code>@supports not(display:flex) { /* uff :( internet explorer */}</code></p>
 		</section>
-		<section class="">
-			<h1>calc()</h1>
-		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Text overflow</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Inline-block</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Alto y ancho minimo/maximo</h1>
 		</section>
 		<section class="">
-			<h1>Grid layout</h1>
+			<h1 class="cr">Grid layout</h1>
+			<p>Por fin podemos crear grids sin bootstrap</p>
+			<div class="container grid">
+				<div class="col">A</div>
+				<div class="col">B</div>
+				<div class="col">C</div>
+				<div class="col">D</div>
+				<div class="col">E</div>
+				<div class="col">F</div>
+				<div class="col">G</div>
+				<div class="col">H</div>
+				<div class="col">I</div>
+				<div class="col">J</div>
+				<div class="col">K</div>
+				<div class="col">L</div>
+				<div class="col">M</div>
+				<div class="col">N</div>
+				<div class="col">Ñ</div>
+				<div class="col">O</div>
+				<div class="col">P</div>
+				<div class="col">Q</div>
+				<div class="col">R</div>
+				<div class="col">S<	/div>
+			</div>
 		</section>
 		<section class="">
-			<h1>rem units</h1>
+			<h1 class="cr">rem units</h1>
+			<p>No usen <code>em</code> para tipografias</p>
+			<p>Mejor usen <code>rem</code></p>
+			<p><code>rem</code> solo calcula su tamaño en base al elemento raiz</p>
+
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Soporte para TrueType y OpenType</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Resize</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Overflow-wrap</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Repeat gradients</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>filtros</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Word break</h1>
 		</section>
 		<section class="">
-			<h1>Viewports units</h1>
+			<h1 class="cr">Viewports units</h1>
+			<p>Ahora tenemos unidades en base al viewport</p>
+			<p><code>1vw</code> es una centesima parte del ancho del viewport</p>
+			<p><code>1vh</code> es una centesima parte del alto del viewport</p>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Counters</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Evitar selección</h1>
+			<p class="user-select">¿Cuanto que no puedes seleccionar este texto?</p>
 		</section>
 		<section class="">
-			<h1>::selection</h1>
+			<h1 class="wd">::selection</h1>
+			<p class="selection">Selecciona este texto</p>
 		</section>
 		<section class="">
-			<h1>CSS Variables</h1>
+			<h1 class="cr">CSS Variables</h1>
+			<p><code>selector {--nombre-variable: valor; }</code></p>
+			<p class="css-variable"><code>:root {--banana-yellow: #ffe135; }</code></p>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Background-blend-mode</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Cursores</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Shapes</h1>
 		</section>
 		<section class="">
-			<h1>::placeholder</h1>
+			<h1 class="wd">::placeholder</h1>
+			<input class="placeholder" type="text" placeholder="Ingresa tu nombre">
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Apariencia</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>clip-path</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Font loading</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Font stretch</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Media querie resolution</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>text align last</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Current color</h1>
 		</section>
-		<section class="">
+		<section class="hide">
 			<h1>Background-attachment</h1>
 		</section>
-		<section class="">
-			<h1>Interaction media features</h1>
+		<section class="hide">
+			<h1 class="wd">Interaction media features</h1>
+		</section>
+		<section class="hide">
+			<h1 class="cr">font kerning</h1>
+		</section>
+		<section class="hide">
+			<h1 class="wd">:placeholder-shown</h1>
+		</section>
+		<section class="hide">
+			<h1 class="wd">devicePixelRatio</h1>
 		</section>
 		<section class="">
-			<h1>font kerning</h1>
+			<h1 class="rec">::first-letter</h1>
+			<p class="first-letter">Este es un texto capitalizado</p>
+		</section>
+		<section class="hide">
+			<h1 class="cr">unset value</h1>
+		</section>
+		<section class="hide">
+			<h1 class="cr">initial value</h1>
+		</section>
+		<section class="hide">
+			<h1 class="cr">all property</h1>
 		</section>
 		<section class="">
-			<h1>:placeholder-shown</h1>
+			<h1 class="rec">letter spacing</h1>
+			<p class="letter-spacing">Este texto tiene letter-spacing de 4px</p>
+		</section>
+		<section class="hide">
+			<h1 class="wd">revert value</h1>
 		</section>
 		<section class="">
-			<h1>devicePixelRatio</h1>
+			<h1 class="wd">:in-range y :out-range</h1>
+			<p>Para <code>&lt;input type="number" max="100", min="0"&gt;</code></p>	
+			<p><code>selector:in-range{}</code>mostrara cuando el valor este dentro del rango</p>
+			<p><code>selector:out-range{}</code>mostrar cuando el valor este fuera de rango</p>
 		</section>
 		<section class="">
-			<h1>::first-letter</h1>
+			<h1 class="wd">:is()</h1>
+			<p></p>
+			<p><code>elemento:is(:hover){}</code></p>
+		</section>
+		<section class="hide">
+			<h1 class="wd">case insensitive attribute selector</h1>
 		</section>
 		<section class="">
-			<h1>unset value</h1>
+			<h1 class="wd">:not()</h1>
+			<p>Selecciona un elemento que no esta representado por el argumento del selector</p>
+			<p><code>button:not([disabled]){}</code></p>
+			<p><code>h1:not(a) {}</code></p>
 		</section>
 		<section class="">
-			<h1>initial value</h1>
+			<h1 class="wd">:has()</h1>
+			<p>Solo selecciona elementos que contienen el elemento que se la pase</p>
+			<p><code>a:has(>img) {}</code></p>
+			<p><code>h1:has(>a) {}</code></p>
+			<p><code>.card:has(>.thumbnail) {}</code></p>
+		</section>
+		<section class="hide">
+			<h1 class="wd">:dir()</h1>
 		</section>
 		<section class="">
-			<h1>all property</h1>
+			<h1 class="cr">unidad <code>ch</code></h1>
+
+			<p>Ahora vamos a tener</p>
+			<p><code>selector { font-size: 1ch }</code></p>
+			<p>donde <code>ch</code> equivale al ancho de <code>0</code> en la fuente en uso</p>
 		</section>
 		<section class="">
-			<h1>letter spacing</h1>
+			<h1 class="wd">font-rendering controls</h1>
+			<p><code>selector { font-display: auto | 'block' | 'swap' | 'fallback'}</code></p>
 		</section>
 		<section class="">
-			<h1>writing-mode</h1>
+			<h1 class="rec">first-line</h1>
+			<p class="first-line">Vamos a hacer algo con la primer linea de este contenedor, esto depende de varios factores, entre otros el tamaño del contenedor y no afecta a elementos inline</p>
+			<p><code><code>selector::first-line { color: red; }</code></code></p>
+			</div>
 		</section>
 		<section class="">
-			<h1>revert value</h1>
+			<h1 class="wd">text-indent</h1>
+			<p class="text-indent">Este es un texto largo que ha sido indentado para que veamos esta propiedad</p>
+			<p><code>selector {tex-indent: 2em; }</code></p>
+		</section>
+		<section class="hide">
+			<h1 class="cr">background-repeat round</h1>
+			<div class="bg-repeat-round">
+			</div>
+		</section>
+		<section class="hide">
+			<h1 class="rec">namespaces</h1>
+		</section>
+		<section class="hide">
+			<h1 class="wd">display contents</h1>
+			<div class="display-contents">
+				<span>Este es un elemento cuyo padre tiene <code>display:contents</code>, por lo que no se muestra como caja pero su hijo si</span>
+			</div>
+		</section>
+		<section class="hide">
+			<h1 class="wd">Variable fonts</h1>
 		</section>
 		<section class="">
-			<h1>Viudas y huerfanos</h1>
+			<h1 class="wd">system-ui value</h1>
+			<p class="system-ui">Este texto se mostrara con la fuente default del sistema</p>
+			<p><code>selector {font-family: -apple-system, BlinkMacSystemFont}</code></p>
+		</section>
+		<section class="hide">
+			<h1 class="wd">paint API</h1>
+		</section>
+		<section class="hide">
+			<h1 class="pr"><code>:read-only :read-write</code></h1>
+			<input class="read-only" readonly placeholder="Esto es solo lectura">
+			<input class="read-write" placeholder="Esto es solo escritura">
 		</section>
 		<section class="">
-			<h1>:in-range y :out-range</h1>
+			<h1 class="pr">grab & grabbing cursors</h1>
+			<div class="grab">Grab</div>
+			<div class="grabbing">Grabbing</div>
+			<p><code>selector {cursor: grab;}</code></p>
+			<p><code>selector {cursor: grabbing;}</code></p>
 		</section>
 		<section class="">
-			<h1>:matches</h1>
+			<h1 class="rec">font-variant-numeric</h1>
+			<p>x<sup>2</sup></p>
+			<p class="ordinal">1st, 2nd</p>
+			<p><span class="fraccion">1/2</span> kg azucar</p>
+
+			<br>
+			<p><code>font-variant-position: super;</code></p>
+			<p><code>font-variant-numeric: ordinal;</code></p>
+			<p><code>font-variant-numeric: oldstyle-nums diagonal-fractions;</code></p>
 		</section>
-		<section class="">
-			<h1>case insensitive attribute selector</h1>
-		</section>
-		<section class="">
-			<h1>:not()</h1>
-		</section>
-		<section class="">
-			<h1>:has()</h1>
-		</section>
-		<section class="">
-			<h1>:dir()</h1>
-		</section>
-		<section class="">
-			<h1>ch unidad</h1>
-		</section>
-		<section class="">
-			<h1>font-rendering controls</h1>
-		</section>
-		<section class="">
-			<h1>first-line</h1>
-		</section>
-		<section class="">
-			<h1>text-indent</h1>
-		</section>
-		<section class="">
-			<h1>background-repeat round</h1>
-		</section>
-		<section class="">
-			<h1>namespaces</h1>
-		</section>
-		<section class="">
-			<h1>display contents</h1>
-		</section>
-		<section class="">
-			<h1>Variable fonts</h1>
-		</section>
-		<section class="">
-			<h1>system-ui value</h1>
-		</section>
-		<section class="">
-			<h1>paint API</h1>
-		</section>
-		<section class="">
-			<h1>:read-only :read-write</h1>
-		</section>
-		<section class="">
-			<h1>grab & grabbing cursors</h1>
-		</section>
-		<section class="">
-			<h1>overflow</h1>
-		</section>
-		<section class="">
-			<h1>font-variant-numeric</h1>
-		</section>
-		<section class="">
-			<h1>math functions</h1>
+		<section class="hide">
+			<h1 class="wd">math functions</h1>
+			<p><code>calc()</code></p>
+			<p><code>min()</code></p>
+			<p><code>max()</code></p>
+			<p><code>clamp()</code></p>
 		</section>
 		<section>
 			<h1>Eso es todo amigas y amigos</h1>
 
-			<h3>Si le gusto la platica ustede puede:</h3>
+			<p>Si le gusto la platica ustede puede:</p>
 
-			<p>Contratarme si quiere que le haga su CSS escriba a hola@sandia.site o hola@jailandrade.rocks</p>
+			<p>Contratarme si quiere que le haga su CSS escriba a jailandrade@gmail.com</p>
 
 			<p>Contratarme si quiere que le enseñe a hacer CSS <mark>proximamente</mark> <a href="https://calmecatl.com">calmecatl.com</a></p>
 

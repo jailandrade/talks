@@ -20,14 +20,119 @@ html {
 	--banana-yellow: #ffe135;
 }
 
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://mdn.mozillademos.org/files/15757/SourceSansPro-Regular.otf") format("opentype");
+}
+
+ul {
+	margin-left: 2em;
+	line-height: 2;
+}
+
+code {
+	padding: 0.1em;
+	font-size: 0.95rem;
+	background-color: rgb(230, 230, 230);
+}
+
 h1, h2, h3, h4 {
-	line-height: 1;
+	line-height: 1.05;
 }
 
 section {
 	height: 100vh;
 	padding: 1em;
 }
+
+section.hide {
+	display: none;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid.half {
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.grid.container {
+	grid-template-columns: repeat(7, 1fr);
+	text-align: center;
+	grid-gap: 1em;
+}
+
+.grid.container .col{
+	border: 1px solid rgb(60, 60, 60);
+}
+
+.menu.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu.flex a {
+	padding: 1em;
+}
+
+.menu.flex a:hover {
+	border: 1px solid red;
+}
+
+.opacidad {
+	width: 10em;
+	height: 10em;
+	text-align: center;
+	padding: 1em;
+	background-color: rgba(250, 250, 0, 0.2);
+}
+
+.gradientes {
+	color: #fff;
+	 background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+}
+
+.wd::after,
+.cr::after,
+.rec::after,
+.pr::after,
+.ls::after {
+	margin-left: 1em;
+	font-weight: lighter;
+	font-size: 0.65rem;
+	color: #fff;
+	padding: 0.4em;
+	vertical-align: top;
+}
+
+
+.wd::after {
+	content: "Borrador en trabajo";
+	background-color: hsl(20, 78%, 55%);
+}
+
+.cr::after {
+	content: "Recomendación del candidato";
+	background-color: hsl(62, 86%, 45%);
+}
+
+.rec::after {
+	content: "Recomendación";
+	background-color: hsl(129, 53%, 40%);
+}
+
+.pr::after {
+	content: "Recomendación propuesta";
+	background-color: hsl(89, 53%, 44%);
+}
+
 
 .bg-floralwhite {
 	background-color: var(--floral-white);
@@ -53,31 +158,206 @@ section {
 }
 
 .text-shadow {
-	font-size: 5em;
+	font-size: 3em;
 	font-weight: bolder;
 	text-shadow: 0.1em 0.1em 0.1em var(--banana-yellow);
 }
 
 .multiple-background {
-	background: url('img/');
-	background: url('img/');
-
-	background-position: bottom;
-	background-position: top;
+	color: #fff;
+	width: 100%;
+	height: 400px;
+	background-image: url(https://mdn.mozillademos.org/files/11305/firefox.png),
+	  url(https://mdn.mozillademos.org/files/11307/bubbles.png),
+	  linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+	background-repeat: no-repeat,
+	  no-repeat,
+	  no-repeat;
+	background-position: bottom right,
+	  left,
+	  right;
 }
 
-.colors-hsl {
+.cat-background {
+	background: url(img/cat.svg);
+	margin: 1em 0;
+	padding: 4em;
+	color: blue;
+}
+
+.css-variable code{
+	background-color: var(--banana-yellow);
+}
+
+.border-images {
+	border: 20px solid transparent;
+	border-image: url(img/cat.svg) 10 10 round;
+}
+
+.selection::selection {
+	background-color: var(--banana-yellow);
+	color: #fff;
+}
+
+.placeholder {
+	padding: 1em;
+	width: 25%;
+	border: 1px solid black;
+}
+
+input::placeholder {
+	color: red;
+	font-size: 0.5rem;
+}
+
+.caja {
+	perspective: 600px;
+	width: 6em;
+	height: 6em;
+	border: 0.2em solid rgb(200, 200, 200);
+}
+
+.transform-3d {
+	width: 5em;
+	height: 5em;
+	background: red;
+	transform: rotateY(45deg);
+}
+
+.transform-2d {
+	width: 5em;
+	height: 5em;
+	background: red;
+	transform: translateX(5em);
+}
+
+.transition {
+	height: 4em;
+	width: 10em;
+	-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.transition:hover {
+	background-color: var(--banana-yellow);
+	height: 8em;
+	width: 15em;
+	-webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.animation {
+	width: 6em;
+	height: 5em;
+	border: 3px solid red;
+	animation-duration: 3s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 120%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.box-shadow {
+	width: 300px;
+	height: 300px;
+	padding: 1em;
+	border: 1px solid rgb(230, 230, 230);
+	box-shadow: 10px 10px 10px rgb(230, 230, 230);
+}
+
+.border-radius {
+	border: 1em solid red;
+	border-radius: 30px;
+}
+
+.first-letter::first-letter {
+	font-weight: bolder;
+	text-transform: capitalize;
+	font-size: 2rem;
+}
+
+.letter-spacing {
+	letter-spacing: 10px;
+}
+
+.first-line::first-line {
+	color: red;
+}
+
+.text-indent {
+	text-indent: 2em;
+}
+
+.bg-repeat-round {
+	/*Photo by MILKOVÍ on Unsplash*/
+	background: url(img/milkovi-1580016-unsplash.jpg);
+	width: 20em;
+	height: 10em;
+	background-repeat: round;
+}
+
+.display-contents {
+	display: contents;
+}
+.display-contents span {
+	margin: 2em;
+	padding: 1em;
+	border: 3px solid var(--banana-yellow);
+}
+
+.system-ui {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI"
+}
+
+:read-only{
 
 }
 
-.colors-hsla {
+:read-write{
 
 }
-
-.colors-rgba {
-
+.grab, .grabbing {
+	width: 8em;
+	height: 4em;
+	display: inline-block;
+	margin: 1em;
+	text-align: center;
+	padding: 1em;
+	background-color: var(--banana-yellow);
 }
 
-.box-sizing {}
+.grab {
+	cursor: grab;
+}
+.grabbing {
+	cursor: grabbing;
+}
 
-.box-shadow {}
+sup {
+	font-variant-position: super;
+}
+
+.ordinal {
+	font-variant-numeric: ordinal;
+	font-family: "Source Sans Pro";
+}
+
+.fraccion { 
+	font-variant-numeric: oldstyle-nums diagonal-fractions; 
+	font-family: "Source Sans Pro";
+}
+
+@media screen and (max-width: 767px) {
+	html {
+		font-size: 16px;
+	}
+}
