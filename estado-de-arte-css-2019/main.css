@@ -125,12 +125,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 
 .rec::after {
 	content: "Recomendación";
-	background-color: hsl(129, 53%, 40%);
+	background-color: green;
 }
 
 .pr::after {
 	content: "Recomendación propuesta";
-	background-color: hsl(89, 53%, 44%);
+	background-color: green;
 }
 
 
