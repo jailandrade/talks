@@ -1,0 +1,25 @@
+body {
+  font-size: 20px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+article {
+	font-size: 2.8rem;
+  height: 100vh;
+  width: 100vw;
+  padding: 4rem;
+  line-height: 1.6;
+}
+
+article h2 {
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
