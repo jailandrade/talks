@@ -1,0 +1,37 @@
+h1, h2, h3 {
+  text-align: center;
+}
+
+h2 a {
+  color: #333;
+}
+
+.site-header {
+  text-align: center;
+}
+
+article {
+  height: 100vh;
+  padding: 5rem;
+  font-size: 3rem;
+  background-color: #f5f5f5;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  background-color: #f0ead6;
+  border-radius: 0.1rem;
+  padding: 1rem 2rem;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
