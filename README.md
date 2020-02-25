@@ -1,5 +1,9 @@
-My public talks
+# Talks
 
-* 10-05-19 Meetup xalapacode - El estado del arte CSS en 2019
-* 11-05-19 Flisol FEI - Introducción a PyGTK3
+Mis pláticas publicas que he dado en diversos eventos.
+
+## Actualización
+
+De ahora en adelante este repo estara alojado en [Gitlab](https://gitlab.com/jailandrade/talks)
+
 
